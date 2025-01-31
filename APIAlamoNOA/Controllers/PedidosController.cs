@@ -29,9 +29,9 @@ namespace APIAlamoNoa.Controllers
         public IConfiguration Configuration { get; }
 
         [HttpPost]
-        public async Task<ActionResult<List<ComprobanteResponse>>> PostFacturacion([FromBody] PedidoDTO payload)
+        public async Task<ActionResult<ComprobanteResponse>> PostFacturacion([FromBody] PedidoDTO payload)
         {
-            List<ComprobanteResponse> response = new List<ComprobanteResponse>();
+            ComprobanteResponse response = null;
             bool dioError = false;
 
             var ControllerName = "Pedidos";
@@ -43,8 +43,8 @@ namespace APIAlamoNoa.Controllers
             FieldMapper mapping = new FieldMapper();
             if (!mapping.LoadMappingFile(AppDomain.CurrentDomain.BaseDirectory + @"\Services\FieldMapFiles\Pedidos.json"))
             {
-                response.Add(new ComprobanteResponse(new ComprobanteDTO((string?)payload.identificador
-                , "400", "Error de configuracion", "No se encontro el archivo de configuracion del endpoint", null)));
+                response = new ComprobanteResponse(new ComprobanteDTO((string?)payload.identificador
+                , "400", "Error de configuracion", "No se encontro el archivo de configuracion del endpoint", null));
 
                 return BadRequest(response);
             };
@@ -57,12 +57,12 @@ namespace APIAlamoNoa.Controllers
             if (errorMessage != "")
             {
                 dioError = true;
-                response.Add(new ComprobanteResponse(new ComprobanteDTO(Convert.ToString(payload.identificador, CultureInfo.CreateSpecificCulture("en-GB")), "400", "Bad Request", errorMessage, null)));
+                response = new ComprobanteResponse(new ComprobanteDTO(Convert.ToString(payload.identificador, CultureInfo.CreateSpecificCulture("en-GB")), "400", "Bad Request", errorMessage, null));
 
             }
             else
             {
-                response.Add(new ComprobanteResponse(new ComprobanteDTO(Convert.ToString(payload.identificador, CultureInfo.CreateSpecificCulture("en-GB")), "200", "OK", errorMessage, null)));
+                response = new ComprobanteResponse(new ComprobanteDTO(Convert.ToString(payload.identificador, CultureInfo.CreateSpecificCulture("en-GB")), "200", "OK", errorMessage, null));
             };
             
 
@@ -75,6 +75,25 @@ namespace APIAlamoNoa.Controllers
             }
 
             return Ok(response);
+
+        }
+
+        [HttpGet]
+       
+        [Route("{identificador}")]
+        public async Task<ActionResult<ComprobanteResponse>> GetFacturacion(string identificador)
+        {
+            ComprobanteResponse respuesta = await Repository.GetTransaccion(identificador, "SAR_FCRMVH");
+
+            switch (respuesta.response.status)
+            {
+                case "404":
+                    return NotFound(respuesta);
+                    break;
+                default:
+                    return Ok(respuesta);
+                    break;
+            }
 
         }
 

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "APIAlamoDrifter/1.0.0": {
+      "APIAlamoNOA/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.1",
           "Newtonsoft.Json": "13.0.3",
@@ -15,7 +15,7 @@
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
-          "APIAlamoDrifter.dll": {}
+          "APIAlamoNOA.dll": {}
         }
       },
       "Azure.Core/1.25.0": {
@@ -544,7 +544,7 @@
     }
   },
   "libraries": {
-    "APIAlamoDrifter/1.0.0": {
+    "APIAlamoNOA/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
