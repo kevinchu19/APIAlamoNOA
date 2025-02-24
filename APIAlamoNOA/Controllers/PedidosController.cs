@@ -17,6 +17,8 @@ namespace APIAlamoNoa.Controllers
     {
 
         private Serilog.ILogger Logger { get; set; }
+        public PedidosRepository Repository { get; }
+        public IConfiguration Configuration { get; }
 
         public PedidosController(Serilog.ILogger logger, PedidosRepository repository, IConfiguration configuration)
         {
@@ -25,8 +27,7 @@ namespace APIAlamoNoa.Controllers
             Configuration = configuration;
         }
 
-        public PedidosRepository Repository { get; }
-        public IConfiguration Configuration { get; }
+        
 
         [HttpPost]
         public async Task<ActionResult<ComprobanteResponse>> PostFacturacion([FromBody] PedidoDTO payload)
@@ -79,7 +80,6 @@ namespace APIAlamoNoa.Controllers
         }
 
         [HttpGet]
-       
         [Route("{identificador}")]
         public async Task<ActionResult<ComprobanteResponse>> GetFacturacion(string identificador)
         {

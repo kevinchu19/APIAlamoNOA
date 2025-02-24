@@ -12,14 +12,15 @@ namespace APIAlamoNoa.Repositories
 {
     public class RepositoryBase
     {
+        public IConfiguration Configuration { get; }
+        public Serilog.ILogger Logger { get; }
+
         public RepositoryBase(IConfiguration configuration, Serilog.ILogger logger)
         {
             Configuration = configuration;
             Logger = logger;
         }
 
-        public IConfiguration Configuration { get; }
-        public Serilog.ILogger Logger { get; }
 
         public async Task<string> ExecuteSqlInsertToTablaSAR(List<FieldMap> fieldMapList, object resource, object valorIdentificador, string jobName)
         {

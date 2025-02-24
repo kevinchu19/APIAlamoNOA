@@ -13,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 //Repositorys
 builder.Services.AddScoped<PedidosRepository>();
+builder.Services.AddScoped<CuentaCorrienteRepository>();
 
 
 var columnOptions = new ColumnOptions
@@ -41,6 +42,8 @@ builder.Services.AddSingleton<Serilog.ILogger>(options =>
                 .CreateLogger();
 
 });
+
+
 //Filtro de Excepcion
 builder.Services.AddMvc(Options =>
 {
