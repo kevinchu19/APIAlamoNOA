@@ -1,0 +1,274 @@
+{
+  "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FieldMap, APIAlamoNoa]], mscorlib",
+  "$values": [
+    {
+      "Table": "SAR_FCRMVH",
+      "ParentTable": null,
+      "ParentProperty": null,
+      "Fields": {
+        "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa]], mscorlib",
+        "$values": [
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_IDENTI",
+            "PropertyName": "identificador",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_STATUS",
+            "PropertyName": null,
+            "FixedValue": "N",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_FCHMOV",
+            "PropertyName": "fechaDeMovimiento",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_CIRCOM",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoNoa.Services.Entities.FieldFunction, APIAlamoNoa",
+              "Name": "Alm_Fnc_Ins_SarFcrmvh_DefinoCircuito",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FunctionParameters, APIAlamoNoa]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "NumeroCliente",
+                    "PropertyName": "numeroCliente"
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_CIRAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoNoa.Services.Entities.FieldFunction, APIAlamoNoa",
+              "Name": "Alm_Fnc_Ins_SarFcrmvh_DefinoCircuito",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FunctionParameters, APIAlamoNoa]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "NumeroCliente",
+                    "PropertyName": "numeroCliente"
+                  }
+                ]
+
+              }
+            }
+
+          },
+
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_CODEMP",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoNoa.Services.Entities.FieldFunction, APIAlamoNoa",
+              "Name": "Alm_Fnc_Ins_SarFcrmvh_DefinoCodemp",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FunctionParameters, APIAlamoNoa]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "NumeroCliente",
+                    "PropertyName": "numeroCliente"
+                  }
+                ]
+
+              }
+            }
+          },
+
+
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_NROCTA",
+            "PropertyName": "numeroCliente",
+            "FixedValue": null,
+            "Function": null          },
+
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVH_EJEAUT",
+            "PropertyName": null,
+            "FixedValue": "N",
+            "Function": null
+          },
+
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_FECALT",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_FECMOD",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_ULTOPR",
+            "PropertyName": null,
+            "FixedValue": "A",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_USERID",
+            "PropertyName": null,
+            "FixedValue": "API",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_OALIAS",
+            "PropertyName": null,
+            "FixedValue": "SAR_FCRMVH",
+            "Function": null
+          }
+        ]
+      }
+    },
+    {
+      "Table": "SAR_FCRMVI",
+      "ParentTable": "SAR_FCRMVH",
+      "ParentProperty": "items",
+      "Fields": {
+        "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa]], mscorlib",
+        "$values": [
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_IDENTI",
+            "PropertyName": "identificador",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_NROITM",
+            "PropertyName": "item",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_TIPPRO",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoNoa.Services.Entities.FieldFunction, APIAlamoNoa",
+              "Name": "Alm_Fnc_Ins_SarFcrmvh_DefinoTippro",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FunctionParameters, APIAlamoNoa]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "codigoProducto",
+                    "PropertyName": "codigoProducto"
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_ARTCOD",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoNoa.Services.Entities.FieldFunction, APIAlamoNoa",
+              "Name": "Alm_Fnc_Ins_SarFcrmvh_DefinoArtcod",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoNoa.Services.Entities.FunctionParameters, APIAlamoNoa]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "codigoProducto",
+                    "PropertyName": "codigoProducto"
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_CANTID",
+            "PropertyName": "cantidad",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_PCTBF2",
+            "PropertyName": "bonificacion2",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FCRMVI_PCTBF3",
+            "PropertyName": "bonificacion3",
+            "FixedValue": null,
+            "Function": null
+          },
+
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_FECALT",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_FECMOD",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_ULTOPR",
+            "PropertyName": null,
+            "FixedValue": "A",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_USERID",
+            "PropertyName": null,
+            "FixedValue": "API",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoNoa.Services.Entities.FieldValue, APIAlamoNoa",
+            "Field": "SAR_FC_OALIAS",
+            "PropertyName": null,
+            "FixedValue": "SAR_FCRMVI",
+            "Function": null
+          }
+
+        ]
+      }
+    }
+  ]
+}

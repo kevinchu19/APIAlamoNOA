@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ktchu\source\repos\APIAlamoDrifter\APIAlamoDrifter\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-07-29T17:34:49.8502643Z;True|2024-04-09T17:34:33.0285131-03:00;True|2024-02-06T01:33:21.7442799-03:00;True|2024-02-06T01:31:14.9230079-03:00;True|2024-02-06T00:05:18.3297335-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

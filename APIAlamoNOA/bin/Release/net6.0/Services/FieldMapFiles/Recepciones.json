@@ -1,0 +1,293 @@
+{
+  "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FieldMap, APIAlamoAnclaflex]], mscorlib",
+  "$values": [
+    {
+      "Table": "SAR_PDRMVH",
+      "ParentTable": null,
+      "ParentProperty": null,
+      "Fields": {
+        "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex]], mscorlib",
+        "$values": [
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_IDENTI",
+            "PropertyName": "MSNroAplica",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_STATUS",
+            "PropertyName": null,
+            "FixedValue": "N",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_FCHMOV",
+            "PropertyName": "MSFechaEmision",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_CIRCOM",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoCircuitoOrigen",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_CIRAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoCircuitoAplicacion",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  }
+                ]
+
+              }
+            }
+
+          },
+
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVH_CODEMP",
+            "PropertyName": null,
+            "FixedValue": "ANCLAF02",
+            "Function": null
+          },
+
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_FECALT",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_FECMOD",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_ULTOPR",
+            "PropertyName": null,
+            "FixedValue": "A",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_USERID",
+            "PropertyName": null,
+            "FixedValue": "API",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_OALIAS",
+            "PropertyName": null,
+            "FixedValue": "SAR_PDRMVH",
+            "Function": null
+          }
+        ]
+      }
+    },
+    {
+      "Table": "SAR_PDRMVI",
+      "ParentTable": "SAR_PDRMVH",
+      "ParentProperty": "detalle",
+      "Fields": {
+        "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex]], mscorlib",
+        "$values": [
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_IDENTI",
+            "PropertyName": "MSNroAplica",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_NROITM",
+            "PropertyName": "item",
+            "FixedValue": null,
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_EMPAPL",
+            "PropertyName": null,
+            "FixedValue": "ANCLAF02",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_MODAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoComprobanteAplicacion",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  },
+                  {
+                    "Name": "Posicion",
+                    "PropertyName": null,
+                    "FixedValue": 1
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_CODAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoComprobanteAplicacion",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  },
+                  {
+                    "Name": "Posicion",
+                    "PropertyName": null,
+                    "FixedValue": 2
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_NROAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoComprobanteAplicacion",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  },
+                  {
+                    "Name": "Posicion",
+                    "PropertyName": null,
+                    "FixedValue": 3
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_ITMAPL",
+            "PropertyName": null,
+            "FixedValue": null,
+            "Function": {
+              "$type": "APIAlamoAnclaflex.Services.Entities.FieldFunction, APIAlamoAnclaflex",
+              "Name": "Alm_Fnc_Ins_SarPdrmvh_DefinoItmapl",
+              "Parameters": {
+                "$type": "System.Collections.Generic.List`1[[APIAlamoAnclaflex.Services.Entities.FunctionParameters, APIAlamoAnclaflex]], mscorlib",
+                "$values": [
+                  {
+                    "Name": "CodigoExterno",
+                    "PropertyName": "MSCodAuxiliarERP1"
+                  }
+                ]
+
+              }
+            }
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PDRMVI_CANTID",
+            "PropertyName": "MSCantidad",
+            "FixedValue": null,
+            "Function": null
+          },
+
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_FECALT",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_FECMOD",
+            "PropertyName": null,
+            "FixedValue": "GETDATE()",
+            "Function": null
+
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_ULTOPR",
+            "PropertyName": null,
+            "FixedValue": "A",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_USERID",
+            "PropertyName": null,
+            "FixedValue": "API",
+            "Function": null
+          },
+          {
+            "$type": "APIAlamoAnclaflex.Services.Entities.FieldValue, APIAlamoAnclaflex",
+            "Field": "SAR_PD_OALIAS",
+            "PropertyName": null,
+            "FixedValue": "SAR_PDRMVI",
+            "Function": null
+          }
+
+        ]
+      }
+    }
+  ]
+}
