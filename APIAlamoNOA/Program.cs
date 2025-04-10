@@ -1,5 +1,5 @@
-using APIAlamoNoa.Exceptions;
-using APIAlamoNoa.Repositories;
+using APIAlamoNOA.Exceptions;
+using APIAlamoNOA.Repositories;
 using Serilog;
 using Serilog.Sinks.MSSqlServer;
 using System.Collections.ObjectModel;
@@ -14,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 //Repositorys
 builder.Services.AddScoped<PedidosRepository>();
 builder.Services.AddScoped<CuentaCorrienteRepository>();
+builder.Services.AddScoped<ComprobanteRepository>();
 
 
 var columnOptions = new ColumnOptions

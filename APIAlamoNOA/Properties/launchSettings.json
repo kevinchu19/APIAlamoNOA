@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "APIAlamoNoa.": {
+    "APIAlamoNOA.": {
       "commandName": "Project",
       "launchUrl": "swagger",
       "environmentVariables": {

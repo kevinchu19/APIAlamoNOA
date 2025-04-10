@@ -1,4 +1,4 @@
-﻿namespace APIAlamoNoa.Models.Pedidos
+﻿namespace APIAlamoNOA.Models.Pedidos
 {
     public class ItemDTO
     {

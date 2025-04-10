@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using Newtonsoft.Json;
 using System.Text.Json.Nodes;
-using APIAlamoNoa.Models.Response.Comprobante;
+using APIAlamoNOA.Models.Response.Comprobante;
 
-namespace APIAlamoNoa.Exceptions
+namespace APIAlamoNOA.Exceptions
 {
     public class ExceptionFilter : ExceptionFilterAttribute, IExceptionFilter
     {

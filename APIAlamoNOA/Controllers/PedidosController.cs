@@ -4,13 +4,13 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Reflection;
 using System.Globalization;
-using APIAlamoNoa.Models.Pedidos;
-using APIAlamoNoa.Repositories;
-using APIAlamoNoa.Services;
-using APIAlamoNoa.Models.Response.Comprobante;
+using APIAlamoNOA.Models.Pedidos;
+using APIAlamoNOA.Repositories;
+using APIAlamoNOA.Services;
+using APIAlamoNOA.Models.Response.Comprobante;
 using APIAlamoNOA.Models.CuentaCorriente;
 
-namespace APIAlamoNoa.Controllers
+namespace APIAlamoNOA.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

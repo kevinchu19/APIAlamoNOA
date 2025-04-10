@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wopderbeck\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj": {}
+    "C:\\Users\\ktchubinsky\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wopderbeck\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj": {
+    "C:\\Users\\ktchubinsky\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wopderbeck\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj",
+        "projectUniqueName": "C:\\Users\\ktchubinsky\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj",
         "projectName": "APIAlamoNOA",
-        "projectPath": "C:\\Users\\wopderbeck\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj",
-        "packagesPath": "C:\\Users\\wopderbeck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wopderbeck\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\obj\\",
+        "projectPath": "C:\\Users\\ktchubinsky\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\APIAlamoNOA.csproj",
+        "packagesPath": "C:\\Users\\ktchubinsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ktchubinsky\\source\\repos\\APIAlamoNOA\\APIAlamoNOA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\wopderbeck\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ktchubinsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

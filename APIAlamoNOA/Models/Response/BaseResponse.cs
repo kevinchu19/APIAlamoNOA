@@ -1,4 +1,4 @@
-﻿namespace APIAlamoNoa.Models.Response
+﻿namespace APIAlamoNOA.Models.Response
 {
     public class BaseResponse<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace APIAlamoNoa.Models.Response.Comprobante
+﻿namespace APIAlamoNOA.Models.Response.Comprobante
 {
     public class ComprobanteDTO
     {

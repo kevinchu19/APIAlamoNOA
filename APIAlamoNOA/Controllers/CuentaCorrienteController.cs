@@ -4,13 +4,13 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Reflection;
 using System.Globalization;
-using APIAlamoNoa.Models.Pedidos;
-using APIAlamoNoa.Repositories;
-using APIAlamoNoa.Services;
-using APIAlamoNoa.Models.Response.Comprobante;
+using APIAlamoNOA.Models.Pedidos;
+using APIAlamoNOA.Repositories;
+using APIAlamoNOA.Services;
+using APIAlamoNOA.Models.Response.Comprobante;
 using APIAlamoNOA.Models.CuentaCorriente;
 
-namespace APIAlamoNoa.Controllers
+namespace APIAlamoNOA.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -46,13 +46,35 @@ namespace APIAlamoNoa.Controllers
 
 
 
-            List<CuentaCorrienteDTO?> respuesta = await Repository.ExecuteStoredProcedureList<CuentaCorrienteDTO>
+            List<CuentaCorrienteClienteDTO?> cuentaCorriente = await Repository.ExecuteStoredProcedureList<CuentaCorrienteClienteDTO>
                                                                                      ("Alm_GetCuentaCorrienteForAPI", new Dictionary<string, object>
                                                                                        {
                                                                                             { "@numeroCliente",numeroCliente },
                                                                                             { "@numeroVendedor",numeroVendedor }
                                                                                        }
                                                                                      );
+            List<CuentaCorrienteDTO> respuesta = new List<CuentaCorrienteDTO> ();
+
+            var cuentasAgrupadas = cuentaCorriente
+                .Where(cc => cc != null && !string.IsNullOrEmpty(cc.Cliente))
+                .GroupBy(cc => cc!.Cliente);
+
+            foreach (var grupo in cuentasAgrupadas)
+            {
+                var primerRegistro = grupo.FirstOrDefault();
+
+                if (primerRegistro != null)
+                {
+                    var cuentaDTO = new CuentaCorrienteDTO
+                    {
+                        Cliente = primerRegistro.Cliente,
+                        RazonSocial = primerRegistro.RazonSocial,
+                        CuentaCorriente = grupo.ToList()!
+                    };
+
+                    respuesta.Add(cuentaDTO);
+                }
+            }
 
             return Ok(respuesta);
 

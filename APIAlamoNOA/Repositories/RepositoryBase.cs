@@ -1,5 +1,5 @@
-﻿using APIAlamoNoa.Models.Response.Comprobante;
-using APIAlamoNoa.Services.Entities;
+﻿using APIAlamoNOA.Models.Response.Comprobante;
+using APIAlamoNOA.Services.Entities;
 using Microsoft.Data.SqlClient;
 using System.Collections;
 using System.Configuration;
@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Transactions;
 
-namespace APIAlamoNoa.Repositories
+namespace APIAlamoNOA.Repositories
 {
     public class RepositoryBase
     {
