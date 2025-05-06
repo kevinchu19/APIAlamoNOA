@@ -98,7 +98,8 @@
             "Field": "SAR_FCRMVH_NROCTA",
             "PropertyName": "numeroCliente",
             "FixedValue": null,
-            "Function": null          },
+            "Function": null
+          },
 
           {
             "$type": "APIAlamoNOA.Services.Entities.FieldValue, APIAlamoNOA",
